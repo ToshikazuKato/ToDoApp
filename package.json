@@ -1,0 +1,20 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "TODO App",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7",
+    "nodemon": "^2.0.3",
+    "sanitize-html": "^1.23.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Toshikazu Horioka",
+  "license": "ISC"
+}
