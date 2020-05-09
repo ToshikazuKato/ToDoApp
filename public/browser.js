@@ -10,18 +10,12 @@ function itemTemplate(item){
 
 }
 
-//Initial Page Load Render
-let ourHTML = items.map(function(item){
-	return itemTemplate(item);
-}).join('');
-document.getElementById('item-list').insertAdjacentHTML('beforeend', ourHTML);
-
 //Create function
 document.getElementById('create-form').addEventListener('submit',function(e){
 	e.preventDefault();e.stopPropagation();
 	const createField = document.getElementById('create-field');
 	if (createField.value !== '') {
-		console.log('post');
+		console.log(createField.value,'post');
 		axios.post('/create-item',{text:createField.value}).then(function(res){
 			//insert new item
 			const list = document.getElementById('item-list');

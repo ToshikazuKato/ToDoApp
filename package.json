@@ -4,16 +4,21 @@
   "description": "TODO App",
   "main": "server.js",
   "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.2",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "mongodb": "^3.5.7",
     "nodemon": "^2.0.3",
-    "sanitize-html": "^1.23.0"
+    "sanitize-html": "^1.23.0",
+    "save": "^2.4.0"
   },
   "devDependencies": {},
   "scripts": {
-    "watch": "nodemon server",
+    "watch": "nodemon db",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon db.js"
   },
   "author": "Toshikazu Horioka",
   "license": "ISC"
