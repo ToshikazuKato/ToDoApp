@@ -2,7 +2,7 @@
   "name": "todo_app",
   "version": "1.0.0",
   "description": "TODO App",
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "connect-mongo": "^3.2.0",
     "dotenv": "^8.2.0",
