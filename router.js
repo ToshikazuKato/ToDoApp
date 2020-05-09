@@ -8,7 +8,6 @@ router.get('/', function (req, res) {
 	db.find().toArray(function (err, items) {
 		req.session.items = items;
 		req.session.save(function(){
-			console.log(req.session.items);
 			res.render('index',{items: req.session.items});
 		});
 	});
